@@ -1,2 +1,2 @@
-# C-Concepts
+# C++ - Concepts
 Some programming concepts apliyed in c++
