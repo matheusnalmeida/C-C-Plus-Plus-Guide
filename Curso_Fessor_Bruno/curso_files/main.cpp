@@ -3,12 +3,12 @@
 #define printar cout << "Oi matheus";
 
 
-int smart_pointer_ex();
+int thread_main();
 
 int main() {
 		
     
 
-	return smart_pointer_ex();
+	return thread_main();
 
 }

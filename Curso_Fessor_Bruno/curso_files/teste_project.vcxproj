@@ -170,6 +170,7 @@
     <ClCompile Include="40-printf_and_scanf.cpp" />
     <ClCompile Include="smart_pointer_ex.cpp" />
     <ClCompile Include="templates_ex.cpp" />
+    <ClCompile Include="threads_ex.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aviao.h" />
