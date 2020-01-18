@@ -1,0 +1,30 @@
+##Algumas simples informações acerca dos mais simples comandos de c++##
+
+1)std: A abreviação std significa standart, que e utilizada para identificar que determinada função ou ferramenta que sera utilizada, é padrão do c++. Para que o codigo fique mais limpo e n precisemos especificar toda hora as funcoes com std, 
+
+2)include: Palavra chave que utilizamos para representar a inclusão de determinado pacote em nosso programa, para assim podermos utilizar as funcionalidades do mesmo. Como por exemplo, temos o pacote iostream, que controla a entrada e saida dos fluxos de dados, tendo como por exemplo, funcao para printarmos(cout) determinada mensagem no console. Para incluirmos o pacote digitamos a palavra include,precedida de "#" e seguida dos sinais de <>.Dentro dos sinais,especificamos o nome da biblioteca que queremos incluir.
+Ex:#include <iostream> 
+
+3)cout: Funcao do pacote iostream que sera responsavel por imprimirmos algo na tela. A mensagem a ser imprimida na tela sera especificada apos o cout e precedida por <<. Caso desejemos que ocorra uma quebra de linha apos o print, digitaremos os digitos >> seguidos do marcador endl(end line) após o texto que desejamos printar. Como o endl tambem pertence a biblioteca padrao do c++, iremos marcar o mesmo com std::.
+Ex:cout << "Hello World" => print sem quebra de linha
+   cout << "Hello World" << std::endl => print com quebra de linha
+
+4)cin(console input): Funcao que utilizamos para a entrada de dados no console. A mesma´pode ser utilizada se digitando o comando cin seguido de >> e o nome da variavel que ira receber o dado de entrada.
+Ex:	int numero
+	cin >> numero 
+
+5)vector<tipo_de_dado>: Estrutura de dado mais conhecida como vetor que pode ser utilizada se incluindo a biblioteca #include<vector>.
+
+6)map<tipo_da_chave,tipo_do_valor>: Estrutura de dado mais conhecida como dicionario(mapeia chaves em valores) que pode ser utilizada se incluindo a biblioteca #include <map>.
+
+7)ifstream:O ifstream e um tipo do c++ utilizado para leitura de arquivos no nosso programa. O mesmo tem esse nome, devido a abreviacao das palavras input(entrada),file(arquivo) e stream(fluxo de dados). Estipo de dado pode ser incluido utilizando #include <fstream>
+
+8)ofstream:O ofstream e um tipo do c++ utilizado para escrita de arquivos no nosso programa. O mesmo tem esse nome, devido a abreviacao das palavras output(saoda),file(arquivo) e stream(fluxo de dados). Estipo de dado pode ser incluido utilizando #include <fstream>
+
+##COMPILER INFORMATIONS##
+
+1)Compilação basica com c++ padrão = g++ nome_do_arquivo.cpp -o nome_do_arquivo.out(-o ira sgnificar output file)
+2)Compílação com c++ versão 11 = g++ nome_do_arquivo.cpp -o nome_do_arquivo.out -std=c++11(-std ira sgnificar standart, especificando assim para o arquivo ser compilado com a versão 11 do c++ como padrão)
+OBS: Para diminuir a quantidade de instruçoes que temos que digitar para compilar o arquivo em c++, podemos simplesmente criar na pasta do projeto um arquivo chamado "Makefile"(arquivo que ira especificar como sera compilado nosso arquivo), passando no mesmo um parametro que ira especificar quais flags serao utilizadas para compilar nosso programa. O paramtro que especifica a flag é o CXXFLAGS. Para rodar o programa usando o Makefile, somente é necessario digitar mno terminal make seguido do arquivo cpp.
+Exemplo de definição da flag no arquivo Makefile: CXXFLAGS= -std=c++11	
+Exemplo de execucao no terminal: make nome_do_arquivo.cpp(ira gerar um arquivo a ser executado)
